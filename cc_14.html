@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        #ticketContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .ticket {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .ticket h3, .ticket p, .ticket label {
+            margin: 0 0 10px;
+        }
+        .ticket button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .ticket button:hover {
+            background-color: #45a049;
+        }
+        .ticket.high-priority {
+            border: 2px solid #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customer Support Ticket System</h1>
+    </header>
+    <main>
+        <div id="ticketContainer"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Customer Support Ticket System</p>
+    </footer>
+    <script src="cc_14.js"></script>
+</body>
+</html>
