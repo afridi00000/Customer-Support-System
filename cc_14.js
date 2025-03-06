@@ -36,3 +36,12 @@ const highPriorityTicketsArray = Array.from(highPriorityTickets);
 highPriorityTicketsArray.forEach(ticket => {
     ticket.style.backgroundColor = "#ffe6e6"; // Light red background
 });
+// Task 4: Implementing Ticket Resolution with Event Bubbling
+ticketContainer.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+        const ticket = event.target.closest(".ticket");
+        ticketContainer.removeChild(ticket);
+    } else {
+        console.log("Support ticket clicked");
+    }
+});
